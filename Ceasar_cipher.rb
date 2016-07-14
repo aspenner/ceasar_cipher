@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 
 UPPER_CASE = ('A'.ord .. 'Z'.ord)
 LOWER_CASE = ('a.'.ord .. 'z'.ord)
