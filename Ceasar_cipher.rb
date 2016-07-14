@@ -21,7 +21,7 @@ end
 
 get '/' do
   message = params["message"]
-  shift = params["shift"].to_i
+  shift = params["Shift"].to_i
 	unless message.nil? || shift == 0
   	encrypted_message = ceaser_cipher(message, shift)
 	end
